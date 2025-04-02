@@ -20,6 +20,10 @@ app.use(bodyParser.json());
 // Routes
 app.use("/api/emails", emailRoutes);
 
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
+
 // Start Agenda processing
 agenda.start(); // 🟢 This ensures scheduled jobs get processed
 
