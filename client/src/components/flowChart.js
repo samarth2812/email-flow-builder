@@ -8,6 +8,9 @@ import ReactFlow, {
 } from "reactflow";
 import "reactflow/dist/style.css";
 
+const EMAIL_FLOW_SAVE_URL =
+  "https://email-flow-builder.onrender.com/api/emails/save-flowchart";
+
 // State for managing nodes, edges, and form data
 const FlowChart = () => {
   const [nodes, setNodes] = useState([]);
@@ -134,7 +137,7 @@ const FlowChart = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/emails/save-flowchart",
+        EMAIL_FLOW_SAVE_URL,
         {
           method: "POST",
           headers: {
