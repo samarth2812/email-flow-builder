@@ -2,6 +2,9 @@
 
 Email Flow Builder is a tool to schedule and automate email workflows using a simple flowchart-based UI.
 
+![image](https://github.com/user-attachments/assets/6f334645-8ff2-4765-9891-2c4d950dde4e)
+
+
 ## Features
 - Create email workflows visually
 - Schedule email sending
@@ -13,6 +16,10 @@ Email Flow Builder is a tool to schedule and automate email workflows using a si
 - **Frontend:** React, Netlify
 - **Backend:** Node.js, Express, MongoDB Atlas, Agenda.js for job scheduling
 - **Deployment:** Render (Backend), Netlify (Frontend)
+
+## Live Deployment
+- Frontend: https://snazzy-begonia-f277ab.netlify.app/ 
+- Backend: https://email-flow-builder.onrender.com
 
 ## Installation
 
