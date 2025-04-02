@@ -4,6 +4,10 @@ const agenda = require("../jobs/emailJob"); // Import Agenda
 
 const router = express.Router();
 
+router.get("/", (req, res) => {
+  res.json({ message: "Email flow API is running" });
+});
+
 // Save flowchart and schedule the first email
 router.post("/save-flowchart", async (req, res) => {
   try {
